@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Page1</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+	</style>
+</head>
+
+<!-- espace de développement -- page web -- boutique de sapin -->
+
+<body>
+		<header class="header">
+			<div class="shadow">
+			<div class="logo_header">
+				<img src="image/logo White.png" class="logo" />
+			</div>
+			<img src="image/menu_icon_mob.svg" class="navbar_menu" onclick="menuMobile()">
+			<nav class="navbar" id="navbar">
+				<h1 class="title">SANTAFRIC -- TREES | Boutique</h1>
+				 <div class="logo_header_nav"> 
+				<img src="image/logo Black.png" class="logo" />
+				</div>
+				<ul class="navbar_ul">
+					<li class="navbar_li"> <a  class="navbar_a" href="">Accueil <img src="image/home.png" class="icon_display"></a></li>
+					<li class="navbar_li"><a  class="navbar_a" href="">Articles <img src="image/sapin.png" class="icon_display"></a></li>
+					<li class="navbar_li"> <a class="navbar_a" href="">Acheter <img src="image/panier.ico" class="icon_display"></a>
+					</li>
+				</ul>
+				<img src="image/menu_icon_scrolled.svg" class="navbar_menu_scrolled" onclick="menuMobile()">
+
+
+				<div class="menu_mobile" id="menu_mobile">
+					<ul class="navbar_ul">
+					<li class="navbar_li"> <a  class="navbar_a" href="">Accueil <img src="image/home.png" class="icon_display"></a></li>
+					<li class="navbar_li"><a  class="navbar_a" href="">Articles <img src="image/sapin.png" class="icon_display"></a></li>
+					<li class="navbar_li"> <a class="navbar_a" href="">Acheter <img src="image/panier.ico" class="icon_display"></a>
+					</li>
+				</ul>
+				</div>
+			</nav>
+
+
+			<div class="header_slogan">
+				<h1 class="header_title">SANTAFRIC -- TREES</h1>
+				<h3 class="header_subtitle"> Toutes vos gammes de <span class="header_subtitle_green_style">S</span><span class="header_subtitle_red_style">a</span><span class="header_subtitle_green_style">p</span><span class="header_subtitle_red_style">i</span><span class="header_subtitle_green_style">n</span> de noël présent à un seul endroit !</h3>
+			</div>
+			
+		</header>
+		</div>
+
+
+		<main>
+			<div class="about_us">
+				<div class="contain">
+					<div class="about_us_img">
+						<img src="image/about_us.jpg" class="about_us_img_" />
+					</div>
+					
+				</div>
+				
+				<div class="contain">
+					<h1 class="about_us_title"> A propos de nous </h1>
+					<p class="about_us_paragraph"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<button class="contact_us">Contactez-nous !</button>
+				</div>
+				
+			</div>
+
+
+
+			<h1 class="articles_title">Nos différents articles</h1>
+			<h3 class="articles_subtitle"> Toutes les gammes pour tous les goûts</h3>
+			<div class="articles">
+				
+    			<!-- Carrousel avec des images -->
+    		<div class="carousel">
+        		<div class="img_content">
+            		<img src="image/Capture.png" class="img_caroussel" alt="Image 1">
+        		</div>
+        		<div class="img_content">
+            		<img src="image/Capture1.png" class="img_caroussel" alt="Image 2">
+        		</div>
+        		<div class="img_content">
+            		<img src="image/Capture2.png" class="img_caroussel" alt="Image 3">
+        		</div>
+        		<div class="img_content">
+            		<img src="image/Capture3.png" class="img_caroussel" alt="Image 4">
+        		</div>
+    </div>
+    <button id="prev" class="caroussel_slide" onclick="changeSlide(-1)">&#10094;</button>
+    <button id="next" class="caroussel_slide" onclick="changeSlide(1)">&#10095;</button>
+</div>
+
+
+
+			<h1 class="product_title"> Nos différents produits</h1>
+			<h4 class="product_subtitle">Nos clients sont toujours satisfaits !</h4>
+
+			<div class="product">
+				<!-- creation de plusieurs divisions de sapin différents pour présenter le stock de marchandise -->
+
+				<div class="product_exposition">
+   		 			<img src="image/product.jpg" class="product_img" onclick="openModal('image/product.jpg', 'Description du produit 1')">
+    				<div class="description_img">Description</div>  
+				</div>
+
+				<div class="product_exposition">
+    				<img src="image/product1.jpg" class="product_img" onclick="openModal('image/product1.jpg', 'Description du produit 2')">
+    				<div class="description_img">Description</div>  
+				</div>
+
+				<div class="product_exposition">
+    				<img src="image/product2.jpg" class="product_img" onclick="openModal('image/product2.jpg', 'Description du produit 3')">
+    				<div class="description_img">Description</div>  
+				</div>
+
+				<div class="product_exposition">
+   	 				<img src="image/product3.jpg" class="product_img" onclick="openModal('image/product3.jpg', 'Description du produit 4')">
+    				<div class="description_img">Description</div>  
+				</div>
+
+				<div class="product_exposition">
+    				<img src="image/product4.jpg" class="product_img" onclick="openModal('image/product4.jpg', 'Description du produit 5')">
+    				<div class="description_img">Description</div>  
+				</div>
+
+				<div class="product_exposition">
+    				<img src="image/product5.jpg" class="product_img" onclick="openModal('image/product5.jpg', 'Description du produit 6')">
+    				<div class="description_img">Description</div>  
+				</div>
+
+				<div class="product_exposition">
+    				<img src="image/product6.jpg" class="product_img" onclick="openModal('image/product6.jpg', 'Description du produit 7')">
+    				<div class="description_img">Description</div>  
+				</div>
+
+				<div class="product_exposition">
+   			 		<img src="image/product7.jpg" class="product_img" onclick="openModal('image/product7.jpg', 'Description du produit 8')">
+    				<div class="description_img">Description</div>  
+				</div>
+
+				<div class="product_exposition">
+    				<img src="image/product8.jpg" class="product_img" onclick="openModal('image/product8.jpg', 'Description du produit 9')">
+    				<div class="description_img">Description</div>  
+				</div>
+
+
+
+				<!-- Modal -->
+
+				<div id="myModal" class="modal">
+    				<span class="close" onclick="closeModal()">&times;</span>
+    				<img class="modal-content" id="modalImage">
+    				<div id="modalDescription"></div>
+				</div>
+			</div>
+
+
+			<h1 class="newsletter_title"> NewsLetter </h1>
+			<div class="newsletter">
+				<div class="news_img">
+					<h1 class="newsletter_slogan"> En ce moment,<br> des cadeaux offerts !</h1>
+				</div>
+
+				<form>
+					<h3 class="form_title"> Abonnez-vous pour recevoir des messages sur nos nouvelles sorties</h3>
+					<input type="" name="" placeholder="@mail">
+					<input type="" name="" placeholder="nom">
+					<button type="submit" class="subscribe">
+					S'abonner</button>
+				</form>
+			</div>
+		</main>
+
+
+		<footer>
+
+
+			<div class="copyright_bar">
+				<p> This template was made by annouuuuuuu - Copyright 2025</p>
+			</div>
+
+
+			<div class="resume_bar">
+				<div class="logo_header">
+				<img src="image/logo White.png" class="logo_footer" />
+				</div>
+
+				<div class="footer_info_location">
+					<h1 class="footer_title">SANTAFRIC -- TREES</h1>
+					<img src="image/location_pin.ico" class="icon_display">
+					<p class="footer_description">Sis à Campus Logbessou-PK17, Douala Cameroun</p><br>
+					<img src="image/phone.ico" class="icon_display">
+					<p class="footer_description">+237 620-101-015</p><br>
+					<img src="image/horloge.png" class="icon_display">
+					<p class="footer_description"> 
+					Ouvert 7j/7, 13h-20h</p>
+				</div>
+
+				<div class="footer_info_link">
+					<h2 class="footer_title"> Liens Utiles</h2>
+					<ul class="footer_ul">
+						<li class="footer_li"><a class="footer_a" href="">Site officiel du CES Developpers Studio</a></li>
+						<li class="footer_li"><a  class="footer_a" href="">Site officiel de SANTAFRIC--TREES Company</a></li>
+						<li class="footer_li"><a  class="footer_a" href="">Nos partenaires officiels, <br> propositions de partenariats</a></li>
+						<li class="footer_li"><a  class="footer_a" href="">Mentions légales</a></li>
+					</ul>
+				</div>
+				<div class="social_link">
+					<h2 class="footer_title"> Réseaux sociaux</h2>
+					<div class="facebook">
+						<img src="image/facebook_logo.png" class="icon_display">
+						<p class="footer_description">SANTAFRIC--TREES&co</p>
+					</div>
+					<div class="instagram">
+						<img src="image/instagram_logo.png" class="icon_display">
+						<p class="footer_description">SANTAFRIC--TREES&co</p>
+					</div>
+					<div class="x">
+						<img src="image/x_logo.png" class="icon_display">
+						<p class="footer_description">SANTAFRIC--TREES&co</p>
+					</div>
+					<div class="whatsapp">
+						<img src="image/whatsapp_logo.png" class="icon_display">
+						<p class="footer_description">SANTAFRIC--TREES&co</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<button id="scrollToTopBtn" onclick="scrollToTop()"> <img src="image/uppage.ico"> </button>
+
+
+<script>
+    window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) { 
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+
+
+const title = document.querySelector('.title');
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) { // Ajuste la valeur selon tes besoins
+        title.classList.add('visible'); // Ajoute la classe pour afficher le titre
+    } else {
+        title.classList.remove('visible'); // Retire la classe pour masquer le titre
+    }
+});
+
+
+    // Affiche le bouton lorsque l'utilisateur fait défiler vers le bas
+window.onscroll = function() {
+    const button = document.getElementById("scrollToTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+};
+
+// Fonction pour faire défiler vers le haut
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Pour un défilement en douceur
+    });
+}
+
+
+const images = [
+    'url("image/header1.jpg")', // Remplace par le chemin de ton image
+    'url("image/header5.jpg")', // Remplace par le chemin de ton image
+    'url("image/header3.jpg")'  // Remplace par le chemin de ton image
+
+];
+
+let currentIndex = 0;
+
+function changeBackground() {
+    const backgroundDiv = document.querySelector('.header');
+    currentIndex = (currentIndex + 1) % images.length; // Change l'index de l'image
+    backgroundDiv.style.backgroundImage = images[currentIndex];
+}
+
+// Change d'image toutes les 5 secondes (5000 ms)
+setInterval(changeBackground, 10000);
+
+// Initialisation du fond d'écran
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.header').style.backgroundImage = images[currentIndex];
+});
+
+
+
+let currentSlide = 0;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.img_content');
+    if (index >= slides.length) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = slides.length - 1;
+    } else {
+        currentSlide = index;
+    }
+    
+    const carousel = document.querySelector('.carousel');
+    carousel.style.transform = 'translateX(' + (-currentSlide * 100) + '%)';
+}
+
+function changeSlide(direction) {
+    showSlide(currentSlide + direction);
+}
+
+// Affiche la première image au chargement
+showSlide(currentSlide);
+
+
+
+function openModal(imageSrc, description) {
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("modalImage").src = imageSrc;
+    document.getElementById("modalDescription").innerText = description;
+    document.body.style.overflow = "hidden"; // Bloquer le défilement
+}
+
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+    document.body.style.overflow = "auto"; // Réactiver le défilement
+}
+
+// Fermer le modal si l'utilisateur clique à l'extérieur de l'image
+window.onclick = function(event) {
+    const modal = document.getElementById("myModal");
+    if (event.target == modal) {
+        closeModal();
+    }
+}
+
+
+// fonction d'ouverture menu mobile
+
+function menuMobile() {
+  const menu = document.getElementById("menu_mobile");
+  
+  // Vérifiez si le menu est actuellement affiché
+  if (menu.style.display === "none" || menu.style.display === "") {
+    // Ouvrir le menu
+    menu.style.display = "flex";
+    // Bloquer le scroll
+    document.body.style.overflow = "hidden";
+  } else {
+    // Fermer le menu
+    menu.style.display = "none";
+    // Réactiver le scroll
+    document.body.style.overflow = "auto";
+  }
+}
+
+
+
+</script>
+
+</body>
+</html>
