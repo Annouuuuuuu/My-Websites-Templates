@@ -6,7 +6,7 @@
 	<title>Page1</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-
+<!-- integration de l'API googlefont -->
 	<style>
 	@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 	</style>
@@ -15,6 +15,8 @@
 <!-- espace de développement -- page web -- boutique de sapin -->
 
 <body>
+
+	<!-- Entête et barre de navigation version pc et tablette en format horizontal -->
 		<header class="header">
 			<div class="shadow">
 			<div class="logo_header">
@@ -28,22 +30,29 @@
 				</div>
 				<ul class="navbar_ul">
 					<li class="navbar_li"> <a  class="navbar_a" href="">Accueil <img src="image/home.png" class="icon_display"></a></li>
-					<li class="navbar_li"><a  class="navbar_a" href="">Articles <img src="image/sapin.png" class="icon_display"></a></li>
-					<li class="navbar_li"> <a class="navbar_a" href="">Acheter <img src="image/panier.ico" class="icon_display"></a>
+					<li class="navbar_li"><a  class="navbar_a" href="#articles">Articles <img src="image/sapin.png" class="icon_display"></a></li>
+					<li class="navbar_li"> <a class="navbar_a" href="#">Acheter <img src="image/panier.ico" class="icon_display"></a>
 					</li>
 				</ul>
+
+
+
+			<!-- Barre de navigation version mobile -->
+
+
 				<img src="image/menu_icon_scrolled.svg" class="navbar_menu_scrolled" onclick="menuMobile()">
-
-
 				<div class="menu_mobile" id="menu_mobile">
 					<ul class="navbar_ul">
 					<li class="navbar_li"> <a  class="navbar_a" href="">Accueil <img src="image/home.png" class="icon_display"></a></li>
-					<li class="navbar_li"><a  class="navbar_a" href="">Articles <img src="image/sapin.png" class="icon_display"></a></li>
-					<li class="navbar_li"> <a class="navbar_a" href="">Acheter <img src="image/panier.ico" class="icon_display"></a>
+					<li class="navbar_li"><a  class="navbar_a" href="#articles">Articles <img src="image/sapin.png" class="icon_display"></a></li>
+					<li class="navbar_li"> <a class="navbar_a" href="#">Acheter <img src="image/panier.ico" class="icon_display"></a>
 					</li>
 				</ul>
 				</div>
 			</nav>
+
+
+			<!-- Entête de la page web  -->
 
 
 			<div class="header_slogan">
@@ -55,7 +64,10 @@
 		</div>
 
 
-		<main>
+		<main>			<!-- Contenu principal de la page -->
+
+
+			<!-- Espace " A propos de nous" -->
 			<div class="about_us">
 				<div class="contain">
 					<div class="about_us_img">
@@ -79,8 +91,9 @@
 			</div>
 
 
+			<!-- Espace "Articles" -->
 
-			<h1 class="articles_title">Nos différents articles</h1>
+			<h1 class="articles_title" id="articles">Nos différents articles</h1>
 			<h3 class="articles_subtitle"> Toutes les gammes pour tous les goûts</h3>
 			<div class="articles">
 				
@@ -98,12 +111,13 @@
         		<div class="img_content">
             		<img src="image/Capture3.png" class="img_caroussel" alt="Image 4">
         		</div>
-    </div>
-    <button id="prev" class="caroussel_slide" onclick="changeSlide(-1)">&#10094;</button>
-    <button id="next" class="caroussel_slide" onclick="changeSlide(1)">&#10095;</button>
-</div>
+    		</div>
+    		<button id="prev" class="caroussel_slide" onclick="changeSlide(-1)">&#10094;</button>
+    		<button id="next" class="caroussel_slide" onclick="changeSlide(1)">&#10095;</button>
+			</div>
 
 
+			<!-- Espace "Produits" -->
 
 			<h1 class="product_title"> Nos différents produits</h1>
 			<h4 class="product_subtitle">Nos clients sont toujours satisfaits !</h4>
@@ -112,53 +126,53 @@
 				<!-- creation de plusieurs divisions de sapin différents pour présenter le stock de marchandise -->
 
 				<div class="product_exposition">
-   		 			<img src="image/product.jpg" class="product_img" onclick="openModal('image/product.jpg', 'Description du produit 1')">
-    				<div class="description_img">Description</div>  
+   		 			<img src="image/product.jpg" class="product_img" onclick="openModal('image/product.jpg', 'Sapin de Balsam artificiel créés par une expertise camerounaise à qui nous faisons confiance depuis dix ans')">
+    				<div class="description_img">Balsam inner familly</div>  
 				</div>
 
 				<div class="product_exposition">
     				<img src="image/product1.jpg" class="product_img" onclick="openModal('image/product1.jpg', 'Description du produit 2')">
-    				<div class="description_img">Description</div>  
+    				<div class="description_img">To Barbara's Daddy</div>  
 				</div>
 
 				<div class="product_exposition">
     				<img src="image/product2.jpg" class="product_img" onclick="openModal('image/product2.jpg', 'Description du produit 3')">
-    				<div class="description_img">Description</div>  
+    				<div class="description_img">Santa Classic Tree</div>  
 				</div>
 
 				<div class="product_exposition">
    	 				<img src="image/product3.jpg" class="product_img" onclick="openModal('image/product3.jpg', 'Description du produit 4')">
-    				<div class="description_img">Description</div>  
+    				<div class="description_img">Boules de noel</div>  
 				</div>
 
 				<div class="product_exposition">
     				<img src="image/product4.jpg" class="product_img" onclick="openModal('image/product4.jpg', 'Description du produit 5')">
-    				<div class="description_img">Description</div>  
+    				<div class="description_img">Littre Serbie'sTree</div>  
 				</div>
 
 				<div class="product_exposition">
     				<img src="image/product5.jpg" class="product_img" onclick="openModal('image/product5.jpg', 'Description du produit 6')">
-    				<div class="description_img">Description</div>  
+    				<div class="description_img">Beloved Santa Father</div>  
 				</div>
 
 				<div class="product_exposition">
     				<img src="image/product6.jpg" class="product_img" onclick="openModal('image/product6.jpg', 'Description du produit 7')">
-    				<div class="description_img">Description</div>  
+    				<div class="description_img">Simple Bucket Tree</div>  
 				</div>
 
 				<div class="product_exposition">
    			 		<img src="image/product7.jpg" class="product_img" onclick="openModal('image/product7.jpg', 'Description du produit 8')">
-    				<div class="description_img">Description</div>  
+    				<div class="description_img">White Sapin</div>  
 				</div>
 
 				<div class="product_exposition">
     				<img src="image/product8.jpg" class="product_img" onclick="openModal('image/product8.jpg', 'Description du produit 9')">
-    				<div class="description_img">Description</div>  
+    				<div class="description_img">Sweet wish Tree</div>  
 				</div>
 
 
 
-				<!-- Modal -->
+				<!-- Modal "s'affiche après avoir cliquer sur l'image" -->
 
 				<div id="myModal" class="modal">
     				<span class="close" onclick="closeModal()">&times;</span>
@@ -166,6 +180,9 @@
     				<div id="modalDescription"></div>
 				</div>
 			</div>
+
+
+			<!-- Espace "News Letter" -->
 
 
 			<h1 class="newsletter_title"> NewsLetter </h1>
@@ -185,9 +202,9 @@
 		</main>
 
 
+
+		<!-- Pied de page -->
 		<footer>
-
-
 			<div class="copyright_bar">
 				<p> This template was made by annouuuuuuu - Copyright 2025</p>
 			</div>
@@ -212,7 +229,7 @@
 				<div class="footer_info_link">
 					<h2 class="footer_title"> Liens Utiles</h2>
 					<ul class="footer_ul">
-						<li class="footer_li"><a class="footer_a" href="">Site officiel du CES Developpers Studio</a></li>
+						<li class="footer_li"><a class="footer_a" href="">Site officiel du C&S Developpers Studio</a></li>
 						<li class="footer_li"><a  class="footer_a" href="">Site officiel de SANTAFRIC--TREES Company</a></li>
 						<li class="footer_li"><a  class="footer_a" href="">Nos partenaires officiels, <br> propositions de partenariats</a></li>
 						<li class="footer_li"><a  class="footer_a" href="">Mentions légales</a></li>
@@ -240,6 +257,8 @@
 			</div>
 		</footer>
 
+		<!-- Bouton de retour en haut de page -->
+
 		<button id="scrollToTopBtn" onclick="scrollToTop()"> <img src="image/uppage.ico"> </button>
 
 
@@ -253,6 +272,7 @@
         }
     });
 
+// afffichage de la barre de navigation apres scroll
 
 
 const title = document.querySelector('.title');
@@ -266,8 +286,10 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// affichage du titre de la barre de navigation apres scroll
 
-    // Affiche le bouton lorsque l'utilisateur fait défiler vers le bas
+
+    // Affiche le bouton de retour de haut de page lorsque l'utilisateur fait défiler vers le bas
 window.onscroll = function() {
     const button = document.getElementById("scrollToTopBtn");
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -286,10 +308,11 @@ function scrollToTop() {
 }
 
 
+// background dynamique de l'entête
 const images = [
-    'url("image/header1.jpg")', // Remplace par le chemin de ton image
-    'url("image/header5.jpg")', // Remplace par le chemin de ton image
-    'url("image/header3.jpg")'  // Remplace par le chemin de ton image
+    'url("image/header1.jpg")', 
+    'url("image/header5.jpg")',
+    'url("image/header3.jpg")'  
 
 ];
 
@@ -301,7 +324,7 @@ function changeBackground() {
     backgroundDiv.style.backgroundImage = images[currentIndex];
 }
 
-// Change d'image toutes les 5 secondes (5000 ms)
+// Change d'image toutes les 10 secondes (10000 ms)
 setInterval(changeBackground, 10000);
 
 // Initialisation du fond d'écran
@@ -310,7 +333,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
+// Fonction de changement d'images du caroussel
 let currentSlide = 0;
 
 function showSlide(index) {
@@ -335,12 +358,18 @@ function changeSlide(direction) {
 showSlide(currentSlide);
 
 
-
+// Fonction d'affichage du modal
 function openModal(imageSrc, description) {
     document.getElementById("myModal").style.display = "block";
     document.getElementById("modalImage").src = imageSrc;
     document.getElementById("modalDescription").innerText = description;
     document.body.style.overflow = "hidden"; // Bloquer le défilement
+
+
+    // Ajoutez une marge en bas de la description
+    const modalDescriptionElement = document.getElementById("modalDescription");
+    modalDescriptionElement.style.marginBottom = '20px'; // Ajustez la valeur selon vos besoins
+    modalDescriptionElement.style.marginLeft = '20px'; // Ajustez la valeur selon vos besoins
 }
 
 function closeModal() {
@@ -375,8 +404,6 @@ function menuMobile() {
     document.body.style.overflow = "auto";
   }
 }
-
-
 
 </script>
 
